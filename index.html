@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Soft Skills Dashboard</title>
-  <!-- Link to p5.js library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
-  <!-- Link to your sketch file -->
-  <script src="sketch.js"></script>
-  <script src="sketch1.js"></script>
-  <style>
-    /* optional: set body styles */
-    body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: #f9f9f9;
-      font-family: 'Inter', sans-serif;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Soft Skills Dashboard</title>
+    <!-- Link to p5.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex; /* Use flexbox for side-by-side layout */
+            justify-content: space-around; /* Distribute space between the canvases */
+            align-items: flex-start; /* Align canvases to the top */
+            height: 100vh;
+            background: #f9f9f9;
+            font-family: 'Inter', sans-serif; /* Make sure you have this font linked if you use it */
+        }
+        /* Container for each sketch */
+        .sketch-container {
+            border: 1px solid #ccc; /* Optional: to visualize the container boundaries */
+            margin: 10px; /* Add some margin around each container */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+    </style>
 </head>
 <body>
+    <!-- Container for the first sketch -->
+    <div id="sketch1-container" class="sketch-container"></div>
+    <!-- Container for the second sketch -->
+    <div id="sketch2-container" class="sketch-container"></div>
+
+    <!-- Link to your first sketch file (using instance mode) -->
+    <script src="sketch.js"></script>
+    <!-- Link to your second sketch file (using instance mode) -->
+    <script src="sketch1.js"></script>
 </body>
 </html>
 
