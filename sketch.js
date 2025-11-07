@@ -58,8 +58,6 @@ for (let i = 0; i < skills.length; i++) {
  textSize(12);
  textAlign(LEFT);
 }
-}
-
 
 
 
