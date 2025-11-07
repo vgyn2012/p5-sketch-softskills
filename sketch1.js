@@ -4,18 +4,18 @@ let currentValues = Array(skills.length).fill(0);
 
 // Define a unique color for each skill
 let colors = [
-  '#4B9CD3', // Communication - blue
-  '#6CC24A', // Teamwork - green
-  '#F5A623', // Adaptability - orange
+  '#FFAE4C', // Communication - blue
+  '#537FF1', // Teamwork - green
+  '#6FD195', // Adaptability - orange
   '#D96ED4', // Creativity - pink/purple
-  '#F15B5B', // Leadership - red
-  '#9B8AFB'  // Empathy - violet
+  '#FF928A', // Leadership - red
+  '#8979FF'  // Empathy - violet
 ];
 
 function setup() {
   createCanvas(365, 192);
-  textFont('sans-serif');
-  textSize(10);
+  textFont('salsa');
+  textSize(12);
   noStroke();
 }
 
@@ -33,9 +33,10 @@ function draw() {
     let y = 30 + i * (barHeight + gap);
 
     // Skill label
-    fill(50);
+    fill('#309695');
     textAlign(LEFT, CENTER);
     text(skills[i], 10, y + barHeight / 2);
+    textStyle(BOLD);
 
     // Background bar
     fill(230);
@@ -46,8 +47,9 @@ function draw() {
     rect(startX, y, barWidth, barHeight, 4);
 
     // Numeric label
-    fill(30);
+    fill('#309695');
     textAlign(LEFT, CENTER);
+    textStyle(BOLD);
     text(Math.round(currentValues[i]), startX + barWidth + 5, y + barHeight / 2);
   }
 
