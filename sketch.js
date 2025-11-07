@@ -14,47 +14,47 @@ let colors = [
 ];
 
 function setup() {
-  createCanvas(700, 400);
+  createCanvas(365, 192);
   textFont('sans-serif');
-  textSize(14);
+  textSize(10);
   noStroke();
 }
 
 function draw() {
   background(245);
 
-  let barHeight = 35;
-  let gap = 20;
-  let startX = 220; // space for labels
-  let maxBarWidth = width - startX - 60;
+  let barHeight = 18;       // smaller bars to fit height
+  let gap = 8;              // smaller gap
+  let startX = 110;         // space for labels
+  let maxBarWidth = width - startX - 15; // bar width fits canvas
 
   for (let i = 0; i < skills.length; i++) {
     currentValues[i] = lerp(currentValues[i], values[i], 0.05);
     let barWidth = map(currentValues[i], 0, 6, 0, maxBarWidth);
-    let y = 60 + i * (barHeight + gap);
+    let y = 30 + i * (barHeight + gap);
 
     // Skill label
     fill(50);
     textAlign(LEFT, CENTER);
-    text(skills[i], 40, y + barHeight / 2);
+    text(skills[i], 10, y + barHeight / 2);
 
     // Background bar
     fill(230);
-    rect(startX, y, maxBarWidth, barHeight, 5);
+    rect(startX, y, maxBarWidth, barHeight, 4);
 
     // Colored value bar
     fill(colors[i]);
-    rect(startX, y, barWidth, barHeight, 5);
+    rect(startX, y, barWidth, barHeight, 4);
 
     // Numeric label
     fill(30);
     textAlign(LEFT, CENTER);
-    text(Math.round(currentValues[i]), startX + barWidth + 10, y + barHeight / 2);
+    text(Math.round(currentValues[i]), startX + barWidth + 5, y + barHeight / 2);
   }
 
   // Title
   fill(40);
-  textSize(18);
+  textSize(12);
   textAlign(LEFT);
-  text('Soft Skills Self-Assessment', 40, 30);
+  text('Soft Skills Self-Assessment', 10, 15);
 }
