@@ -12,9 +12,9 @@
             display: flex; /* Use flexbox for side-by-side layout */
             justify-content: space-around; /* Distribute space between the canvases */
             align-items: flex-start; /* Align canvases to the top */
-            height: 100vh;
+            height: 100vh; /* Full viewport height */
             background: #f9f9f9;
-            font-family: 'Inter', sans-serif; /* Make sure you have this font linked if you use it */
+            /* font-family: 'Inter', sans-serif; */ /* Ensure this font is linked if you use it */
         }
         /* Container for each sketch */
         .sketch-container {
@@ -30,11 +30,12 @@
     <!-- Container for the second sketch -->
     <div id="sketch2-container" class="sketch-container"></div>
 
-    <!-- Link to your first sketch file (using instance mode) -->
+    <!-- Link to your first sketch file (ensure it's in instance mode) -->
     <script src="sketch.js"></script>
-    <!-- Link to your second sketch file (using instance mode) -->
+    <!-- Link to your second sketch file (ensure it's in instance mode) -->
     <script src="sketch1.js"></script>
 </body>
 </html>
+
 
 
