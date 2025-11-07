@@ -111,7 +111,7 @@ function removeActivity(index) {
     activities[i].num.position(cnv.position().x + 50, cnv.position().y + y - 10);
     activities[i].skill.position(cnv.position().x + 150, cnv.position().y + y - 10);
     activities[i].desc.position(cnv.position().x + 350, cnv.position().y + y - 10);
-    activities[i].removeBtn.position(cnv.position().x + 820, cnv.position().y + y - 10);
+    activities[i].removeBtn.position(cnv.position().x + 760, cnv.position().y + y - 10);
     activities[i].num.value(i + 1); // update numbering
   }
 }
