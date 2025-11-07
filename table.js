@@ -1,5 +1,5 @@
 let activities = [];
-let softSkills = ["Select Soft Skill ", "Initative", "Emotional Intelligence", "Critical Thinking", "Adaptability", "Teamwork", "Leadership"];
+let softSkills = ["Select Soft Skill ", "Initative", "Emotional Intelligence", "Critical Thinking", "Adaptability", "Teamwork", "Communication"];
 let textColor = '#309695'; // teal color
 
 function setup() {
