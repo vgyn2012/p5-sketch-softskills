@@ -49,6 +49,7 @@ for (let i = 0; i < skills.length; i++) {
 // Numeric label
   fill('#309695');
   textAlign(LEFT, CENTER);
+  textStyle(BOLD);
   text(Math.round(currentValues[i]), startX + barWidth + 5, y + barHeight / 2);
  }
 
@@ -58,6 +59,7 @@ for (let i = 0; i < skills.length; i++) {
  textAlign(LEFT);
 }
 }
+
 
 
 
