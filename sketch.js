@@ -56,6 +56,7 @@ function draw() {
   fill(40);
   textSize(12);
   textAlign(LEFT);
-  text('Soft Skills Self-Assessment', 10, 15);
+
 }
+
 
