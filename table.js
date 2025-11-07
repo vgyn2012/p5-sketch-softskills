@@ -7,7 +7,7 @@ let cnv; // canvas variable
 
 function setup() {
   // Create canvas and attach to body (or a specific container)
-  cnv = createCanvas(830, 543);
+  cnv = createCanvas(830, 600);
   cnv.style('display', 'block'); // removes extra page spacing
   cnv.style('margin', '0');      // remove margin offset
   cnv.position(0, 0);            // align at top-left
