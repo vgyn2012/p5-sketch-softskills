@@ -35,7 +35,7 @@ function setup() {
   let startX = 150;
   let maxWidth = 100;
   let arrowY = null;
-  let arrowX = null;
+  let arrowX = startX + 500 ;
 
   for (let i = 0; i < skillsData.length; i++) {
     let y = 30 + i * (barHeight + spacing);
@@ -61,24 +61,25 @@ function setup() {
 
     // Skill label
     fill('#309695');
+    textStyle(BOLD);
     noStroke();
     text(skillsData[i].skill, 5, y + barHeight / 2);
+    
 
     // Percentage label
     text(skillsData[i].percent + '%', startX + barWidth + 5, y + barHeight / 2);
   }
 
-  
-  
+
 
   // Draw arrow + label for your choice
   if (arrowY !== null) {
     stroke('#EF476F');
     strokeWeight(2);
-    let arrowEndX = arrowX + 60; // longer arrow so it's farther right
+    let arrowEndX = arrowX + 20; // longer arrow so it's farther right
     line(arrowX, arrowY, arrowEndX, arrowY); // arrow line
-    line(arrowEndX, arrowY, arrowEndX - 6, arrowY - 4); // arrow head (top)
-    line(arrowEndX, arrowY, arrowEndX - 6, arrowY + 4); // arrow head (bottom)
+    line(arrowEndX, arrowY, arrowEndX - 8, arrowY - 4); // arrow head (top)
+    line(arrowEndX, arrowY, arrowEndX - 8, arrowY + 4); // arrow head (bottom)
     noStroke();
     fill('#EF476F');
     textAlign(LEFT, CENTER);
@@ -86,3 +87,4 @@ function setup() {
     text("My Top Skill Rating", arrowEndX + 8, arrowY);
   }
 }
+
