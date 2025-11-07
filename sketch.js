@@ -25,7 +25,7 @@ function draw() {
 
   let barHeight = 18;       // smaller bars to fit height
   let gap = 8;              // smaller gap
-  let startX = 110;         // space for labels
+  let startX = 140;         // space for labels
   let maxBarWidth = width - startX - 15; // bar width fits canvas
 
   for (let i = 0; i < skills.length; i++) {
@@ -58,3 +58,4 @@ function draw() {
   textAlign(LEFT);
   text('Soft Skills Self-Assessment', 10, 15);
 }
+
