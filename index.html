@@ -2,25 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Soft Skills Dashboard</title>
-  <!-- Link to p5.js library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
-  <!-- Link to your sketch file -->
-  <script src="sketch.js"></script>
+  <title>Multiple Graphs</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
   <style>
-    /* optional: set body styles */
     body {
-      margin: 0;
-      padding: 0;
       display: flex;
+      gap: 20px; /* space between graphs */
       justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: #f9f9f9;
-      font-family: 'Inter', sans-serif;
+      align-items: flex-start;
+      padding: 20px;
+      flex-wrap: wrap; /* wrap to next line if needed */
     }
   </style>
 </head>
 <body>
+  <script src="graph1.js"></script>
+  <script src="graph2.js"></script>
+  <script src="graph3.js"></script>
 </body>
 </html>
