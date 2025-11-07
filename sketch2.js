@@ -16,6 +16,7 @@ function setup() {
   createCanvas(410, 216); // compact dashboard size
   background(245);
   textSize(12);
+  textFont('salsa');
   textAlign(LEFT, CENTER);
   noLoop();
 
