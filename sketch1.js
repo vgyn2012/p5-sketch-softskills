@@ -1,5 +1,5 @@
 let skills = ['Initiative', 'Emotional Intelligence', 'Critical Thinking', 'Adaptability', 'Teamwork', 'Communication'];
-let values = [4, 8, 12, 9, 8, 6];
+let values = [4, 8, 6, 9, 8, 12];
 let currentValues = Array(skills.length).fill(0);
 
 // Define a unique color for each skill
